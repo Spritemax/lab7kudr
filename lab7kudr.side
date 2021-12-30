@@ -1,0 +1,218 @@
+{
+  "id": "e597bbac-a0fc-4fd4-bd53-89429bf72cc3",
+  "version": "2.0",
+  "name": "lab7kudr",
+  "url": "https://kpi.ua/ru",
+  "tests": [{
+    "id": "2407f6a0-fb8f-4412-a47b-e3c27063ec4c",
+    "name": "maxim cringe",
+    "commands": [{
+      "id": "58f29932-3a29-4097-8835-d55dad933b6e",
+      "comment": "",
+      "command": "open",
+      "target": "https://kpi.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e122f0a-cd89-4d53-8461-b4f32ab2776f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "624x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf0359c6-1ff8-48df-8060-cfb5659ff6a8",
+      "comment": "Расписание",
+      "command": "assertElementPresent",
+      "target": "css=.rozklad > i",
+      "targets": [
+        ["css=.rozklad > i", "css:finder"],
+        ["xpath=//div[@id='block-ikonkipravoruchvidlogotipu']/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6906bdea-3f49-4bd0-a99c-179cfbe9e479",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rozklad > i",
+      "targets": [
+        ["css=.rozklad > i", "css:finder"],
+        ["xpath=//div[@id='block-ikonkipravoruchvidlogotipu']/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb36e68f-772e-42e1-8023-fac10a5e1978",
+      "comment": "открытие",
+      "command": "assertElementPresent",
+      "target": "css=#rozkladModal h3",
+      "targets": [
+        ["css=#rozkladModal h3", "css:finder"],
+        ["xpath=//div[@id='rozkladModal']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Департамент учебной работы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f38eb37a-d3db-4d67-897d-e1ef214b20d5",
+      "comment": "Расписание занять",
+      "command": "assertText",
+      "target": "linkText=Розклад занять",
+      "targets": [],
+      "value": "Розклад занять"
+    }, {
+      "id": "266c590b-667b-4d31-b569-7277535cc04b",
+      "comment": "Расписание сессии",
+      "command": "assertText",
+      "target": "linkText=Розклад сесії",
+      "targets": [],
+      "value": "Розклад сесії"
+    }, {
+      "id": "7c09f83a-193f-4ecf-9b4e-ef4781a5908b",
+      "comment": "Расписание для учетелей",
+      "command": "assertText",
+      "target": "linkText=Розклад для викладачів",
+      "targets": [],
+      "value": "Розклад для викладачів"
+    }, {
+      "id": "0ea4aa00-b3bb-4574-a71c-2ffd5239b71f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Розклад сесії",
+      "targets": [
+        ["linkText=Розклад сесії", "linkText"],
+        ["css=#rozkladModal p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Розклад сесії')]", "xpath:link"],
+        ["xpath=//div[@id='rozkladModal']/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://rozklad.kpi.ua/Schedules/SessionScheduleGroupSelection.aspx']", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Розклад сесії')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f454a1f-0b2b-44a0-b1ef-f548f6833a9f",
+      "comment": "департамент",
+      "command": "assertText",
+      "target": "xpath=//h3[contains(.,'Департамент організації освітнього процесу')]",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='header']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Департамент організації освітнього процесу')]", "xpath:innerText"]
+      ],
+      "value": "Департамент організації освітнього процесу"
+    }, {
+      "id": "cf7ee4e3-f97e-49b2-ab99-a4296aec8d81",
+      "comment": "расписание занять2",
+      "command": "assertText",
+      "target": "linkText=Розклад занять",
+      "targets": [],
+      "value": "Розклад занять"
+    }, {
+      "id": "933ea5d5-8a09-4811-ad12-dca615669fc0",
+      "comment": "расписание сессии 2",
+      "command": "assertText",
+      "target": "linkText=Розклад сесії",
+      "targets": [],
+      "value": "Розклад сесії"
+    }, {
+      "id": "8a1eaae7-093d-4667-a5f8-80595b615846",
+      "comment": "расписание для учителей2",
+      "command": "assertText",
+      "target": "linkText=Розклад для викладачів",
+      "targets": [],
+      "value": "Розклад для викладачів"
+    }, {
+      "id": "c491d361-8cba-45bc-bc50-296f6bb1ad5c",
+      "comment": "группы",
+      "command": "assertElementPresent",
+      "target": "id=ctl00_MainContent_ctl00_txtboxGroup",
+      "targets": [
+        ["id=ctl00_MainContent_ctl00_txtboxGroup", "id"],
+        ["name=ctl00$MainContent$ctl00$txtboxGroup", "name"],
+        ["css=#ctl00_MainContent_ctl00_txtboxGroup", "css:finder"],
+        ["xpath=//input[@id='ctl00_MainContent_ctl00_txtboxGroup']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7201d535-ff68-4194-b0f3-d75be61715b8",
+      "comment": "проверка расписания сессии (кнопка)",
+      "command": "check",
+      "target": "id=ctl00_MainContent_ctl00_btnShowSchedule",
+      "targets": [
+        ["id=ctl00_MainContent_ctl00_btnShowSchedule", "id"],
+        ["name=ctl00$MainContent$ctl00$btnShowSchedule", "name"],
+        ["css=#ctl00_MainContent_ctl00_btnShowSchedule", "css:finder"],
+        ["xpath=//input[@id='ctl00_MainContent_ctl00_btnShowSchedule']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6201065-2f84-4318-9e49-a6b90e773a6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_lBtnSession",
+      "targets": [
+        ["id=ctl00_lBtnSession", "id"],
+        ["linkText=Розклад сесії", "linkText"],
+        ["css=#ctl00_lBtnSession", "css:finder"],
+        ["xpath=//a[contains(text(),'Розклад сесії')]", "xpath:link"],
+        ["xpath=//a[@id='ctl00_lBtnSession']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[4]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:__doPostBack('ctl00$lBtnSession','')\")]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Розклад сесії')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35be065f-be5a-4744-913d-bef477b33f5e",
+      "comment": "получение сессии",
+      "command": "storeAttribute",
+      "target": "css=#ctl00_lBtnSession@class",
+      "targets": [],
+      "value": "j"
+    }, {
+      "id": "110178c8-c9a6-4d12-b4a2-3062445d3e92",
+      "comment": "",
+      "command": "if",
+      "target": "${j}===\"btn btn-primary\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5b1a4f6-e555-446f-a663-743ca8539fba",
+      "comment": "output",
+      "command": "echo",
+      "target": "active",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e93c19c-889e-4746-8dd7-2886c12ec7be",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c44df1b-9266-4877-badf-69258190cc0b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e9130e71-af02-45cf-a187-11d8e0a7cc0f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://kpi.ua/ru", "https://kpi.ua/ua"],
+  "plugins": []
+}
